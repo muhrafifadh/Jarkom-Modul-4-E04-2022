@@ -43,7 +43,8 @@ Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan  melabel netmas
 
 Subnet besar yang dibentuk memiliki NID 192.200.0.0 dengan netmask /19 sehingga pembagian IP berdasarkan NID dan netmask dihitung sesuai dengan pohon berikut.
 
-![vlsm](https://user-images.githubusercontent.com/81162174/204088556-99b80e19-a2b7-4971-9c79-9408163106a2.png)
+<img width="1698" alt="Frame 1" src="https://user-images.githubusercontent.com/81162174/204088675-af3e6f5d-f14b-4886-9bd9-319875d19e81.png">
+
 
 Pada VLSM ini diturunkan sesuai dengan length atasnya sehingga ketika /19 akan diturunkan menjadi /20, dan pembagian IPnya mengikuti tabel. Kemudian jika ada subnet yang bisa diassign, maka kita langsung mengassign. Hal ini dilakukan berulang" sampai semua subnet selesai di assign.
 
