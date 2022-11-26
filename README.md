@@ -53,46 +53,11 @@ Pada VLSM ini diturunkan sesuai dengan length atasnya sehingga ketika /19 akan d
 
 Selanjutnya menyesuaikan pembagian IP sesuai dengan subnet yang telah dibagi berdasarkan pohon diatas pada topologi. Setelah itu akan didapatkan pembagian IP untuk tiap nodenya.
 
-![image](https://user-images.githubusercontent.com/55318172/143030843-8acda53c-1d70-41b2-8c21-3597a420d949.png)
-
-
 ### Hasil Pembagian IP per node
 
-| Subnet | Node | IP | Subnet Mask | Length |
-| --- | --- | --- | --- | --- |
-| A1 | Pucci | 192.200.27.1 | 255.255.255.128 | /25 |
-| A1 | Jipangu | 192.200.27.2 | 255.255.255.128 |  |
-| A2 | Pucci | 192.200.0.1 | 255.255.248.0 | /21 |
-| A2 | Courtyard | 129.200.0.2 | 255.255.248.0 |  |
-| A2 | Calmbelt | 129.200.0.3 | 255.255.248.0 |  |
-| A3 | Pucci | 192.200.27.145 | 255.255.255.252 | /30 |
-| A3 | Water7 | 192.200.27.146 | 255.255.255.252 |  |
-| A4 | Water7 | 192.200.8.1 | 255.255.252.0 | /22 |
-| A4 | Cipher | 192.200.8.2 | 255.255.252.0 |  |
-| A5 | Foosha | 192.200.12.1 | 255.255.252.0 | /22 |
-| A5 | Blueno | 192.200.12.2 | 255.255.252.0 |  |
-| A6 | Water7 | 192.200.27.149 | 255.255.255.252 | /30 |
-| A6 | Foosha | 192.200.27.150 | 255.255.255.252 |  |
-| A7 | Foosha | 192.200.27.153 | 255.255.255.252 | /30 |
-| A7 | Guanhao | 192.200.27.154 | 255.255.255.252 |  |
-| A8 | Guanhao | 192.200.16.1 | 255.255.252.0 | /22 |
-| A8 | Jabra | 192.200.16.2 | 255.255.252.0 |  |
-| A9 | Guanhao | 192.200.24.1 | 255.255.254.0 | /23 |
-| A9 | Alabasta | 192.200.24.2 | 255.255.254.0 |  |
-| A9 | Maingate | 192.200.24.3 | 255.255.254.0 |  |
-| A10 | Alabasta | 192.200.27.129 | 255.255.255.240 | /28 |
-| A10 | Jorge | 192.200.27.130 | 255.255.255.240 |  |
-| A11 | Guanhao | 192.200.27.157 | 255.255.255.252 | /30 |
-| A11 | Oimo | 192.200.27.158 | 255.255.255.252 |  |
-| A12 | Oimo | 192.200.26.1 | 255.255.255.0 | /24 |
-| A12 | Seastone | 192.200.26.2 | 255.255.255.0 |  |
-| A12 | Enieslobby | 192.200.26.3 | 255.255.255.0 |  |
-| A13 | Seastone | 192.200.20.1 | 255.255.252.0 | /22 |
-| A13 | Elena | 192.200.20.2 | 255.255.252.0 |  |
-| A14 | Foosha | 192.200.27.161 | 255.255.255.252 | /30 |
-| A14 | Doriki | 192.200.27.162 | 255.255.255.252 |  |
-| A15 | Oimo | 192.200.27.165 | 255.255.255.252 | /30 |
-| A15 | Fukurou | 192.200.27.166 | 255.255.255.252 |  |
+![save 1](https://user-images.githubusercontent.com/81162174/204089843-3f46a602-1c71-44d0-af61-e19cdbf667c4.png)
+![save2](https://user-images.githubusercontent.com/81162174/204089849-cafe4017-024c-47b6-8573-751d20568f87.png)
+![save 3](https://user-images.githubusercontent.com/81162174/204089851-08bc91d4-b2b8-44e1-8f6a-d8be13fcb6bb.png)
 
 ### Assignment pada CPT
 
