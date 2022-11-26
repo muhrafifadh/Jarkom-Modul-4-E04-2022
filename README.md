@@ -131,7 +131,8 @@ Menggabungkan subnet-subnet paling bawah dalam topologi yaitu dimulai dari subne
 
 #### Kondisi Awal
 
-![image](https://user-images.githubusercontent.com/55318172/143031393-5d270e7e-9c79-477c-bcc0-4225c9198df3.png)
+![CIDR-Tree-Halaman-1 drawio](https://user-images.githubusercontent.com/81162174/204090109-686efae8-f8e2-49d6-81c5-760edf28948a.png)
+
 
 #### Gabungan Pertama(Subnet B)
 
@@ -139,7 +140,7 @@ Menggabungkan subnet-subnet paling bawah dalam topologi yaitu dimulai dari subne
 2. Penggabungan 2 yaitu subnet A12 dan A13 menghasilkan B2 dengan netmask /21 (satu tingkat dari /22).
 3. Penggabungan 3 yaitu subnet A9 dan A10 menghasilkan B3 dengan netmask /22 (satu tingkat dari /23).
 
-![image](https://user-images.githubusercontent.com/55318172/143031408-3d7fe57e-8559-4034-ad8d-9de585c52619.png)
+![CIDR-Tree-Salinan Halaman-1 drawio](https://user-images.githubusercontent.com/81162174/204090371-93ee0258-de20-4b3f-837b-896b63565131.png)
 
 #### Gabungan Kedua(Subnet C)
 
@@ -147,49 +148,52 @@ Menggabungkan subnet-subnet paling bawah dalam topologi yaitu dimulai dari subne
 2. Penggabungan 2 yaitu subnet B2 dan A15 menghasilkan C2 dengan netmask /20.
 3. Penggabungan 3 yaitu subnet B3 dan A8 menghasilkan B3 dengan netmask /21.
 
-![image](https://user-images.githubusercontent.com/55318172/143031429-62803a1a-cb51-4b1e-b541-b12658d80e4e.png)
+![CIDR-Tree-Salinan Salinan Halaman-1 drawio](https://user-images.githubusercontent.com/81162174/204090384-9bab1e50-cd82-4cbe-9540-53886cbe0779.png)
 
 #### Gabungan Ketiga(Subnet D)
 
 1. Penggabungan 1 yaitu subnet C1 dan A4 menghasilkan D1 dengan netmask /18 yaitu satu tingkat dari netmask terbesar yang diambil yaitu /19 dari C1.
 2. Penggabungan 2 yaitu subnet C2 dan A11 menghasilkan D2 dengan netmask /19.
 
-![image](https://user-images.githubusercontent.com/55318172/143031448-6e47724a-4b41-4418-a486-ed84a17fc963.png)
+![CIDR-Tree-Salinan Salinan Salinan Halaman-1 drawio](https://user-images.githubusercontent.com/81162174/204090413-854151ca-59f3-4f84-a2bf-c27a121298e2.png)
 
 #### Gabungan Keempat(Subnet E)
 
 1. Penggabungan 1 yaitu subnet D1 dan A6 menghasilkan E1 dengan netmask /17 yaitu satu tingkat dari netmask terbesar yang diambil yaitu /18 dari D1.
 2. Penggabungan 2 yaitu subnet D2 dan C3 menghasilkan E2 dengan netmask /18.
 
-![image](https://user-images.githubusercontent.com/55318172/143031467-09182464-4e0d-4dfb-9114-798ce77990b1.png)
+![CIDR-Tree-Salinan Salinan Salinan Salinan Halaman-1 drawio](https://user-images.githubusercontent.com/81162174/204090429-dfb979b3-42db-4ffb-b0a7-cedc4547b058.png)
 
 #### Gabungan Kelima(Subnet F)
 
 1. Penggabungan 1 yaitu subnet E1 dan A5 menghasilkan F1 dengan netmask /16 yaitu satu tingkat dari netmask terbesar yang diambil yaitu /17 dari E1.
 2. Penggabungan 2 yaitu subnet E2 dan A7 menghasilkan F2 dengan netmask /17.
 
-![image](https://user-images.githubusercontent.com/55318172/143031507-354f3610-5eb8-45d2-951c-46fce3168096.png)
+![CIDR-Tree-Salinan Salinan Salinan Salinan Salinan Halaman-1 drawio (1)](https://user-images.githubusercontent.com/81162174/204090447-1e25c018-6d5c-4c80-9d62-964634f7b4ec.png)
 
 #### Gabungan Keenam(Subnet G)
 
 Pada step ini hanya terjadi satu penggabungan yaitu subnet F2 dan A14 menghasilkan G1 dengan netmask /16 yaitu satu tingkat dari netmask terbesar yang diambil yaitu /17 dari F2.
 
-![image](https://user-images.githubusercontent.com/55318172/143031532-8c0800ac-703d-4917-ab26-1969a7bb5f7e.png)
+![CIDR-Tree-Halaman 2 drawio](https://user-images.githubusercontent.com/81162174/204090453-40fca2d1-6f88-4b50-ba84-be8e9e8e28af.png)
 
 #### Gabungan Ketujuh(Subnet H)
 
 Step terakhir yaitu menggabungkan dua kelompok F1 dan G1 menjadi satu yaitu subnet H1 dengan netmask /15.
 
-![image](https://user-images.githubusercontent.com/55318172/143031579-3d5f6775-46ff-4a14-b423-901617d70d39.png)
+![CIDR-Tree-Halaman 3 drawio](https://user-images.githubusercontent.com/81162174/204090463-cecde507-5e40-4d27-8c43-38dae9179030.png)
+![CIDR-Tree-Halaman 4 drawio](https://user-images.githubusercontent.com/81162174/204090465-b6ac37e9-db05-4153-abaa-5d45a771da10.png)
+![CIDR-Tree-Halaman 5 drawio](https://user-images.githubusercontent.com/81162174/204090478-d6539d6c-965c-4db6-8f25-c45294f2253e.png)
+![CIDR-Tree-Halaman 6 drawio](https://user-images.githubusercontent.com/81162174/204090485-6da0627e-0c14-4234-bd17-d0aac9245ea8.png)
+![CIDR-Tree-Halaman 7 drawio](https://user-images.githubusercontent.com/81162174/204090492-b0cc860c-0440-47b4-9e28-d5161c121622.png)
 
 ### Pohon IP
 
 Dari penggabungan yang telah dilakukan, didapatkan pohon pembagian IP sebagai berikut.
 
-![image](https://user-images.githubusercontent.com/55318172/143033944-8ba7468d-6cce-4ce0-9b47-609e05b19d47.png)
+![CIDR-Tree drawio](https://user-images.githubusercontent.com/81162174/204090551-0bea5790-92aa-41b6-8f3e-b6e7de730613.png)
 
-
-### Tabel Pembagian IP
+# Tabel Pembagian IP
 
 Maka didapatkan hasil pembagian IP sesuai pada tabel berikut.
 
