@@ -42,12 +42,12 @@ Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan  melabel netmas
 
 ### Pohon IP
 
-Subnet besar yang dibentuk memiliki NID 192.200.0.0 dengan netmask /19 sehingga pembagian IP berdasarkan NID dan netmask dihitung sesuai dengan pohon berikut.
+Subnet besar yang dibentuk memiliki NID 192.194.0.0 dengan netmask /20 sehingga pembagian IP berdasarkan NID dan netmask dihitung sesuai dengan pohon berikut.
 
 <img width="1698" alt="Frame 1" src="https://user-images.githubusercontent.com/81162174/204088675-af3e6f5d-f14b-4886-9bd9-319875d19e81.png">
 
 
-Pada VLSM ini diturunkan sesuai dengan length atasnya sehingga ketika /19 akan diturunkan menjadi /20, dan pembagian IPnya mengikuti tabel. Kemudian jika ada subnet yang bisa diassign, maka kita langsung mengassign. Hal ini dilakukan berulang" sampai semua subnet selesai di assign.
+Pada VLSM ini diturunkan sesuai dengan length atasnya sehingga ketika /20 akan diturunkan menjadi /21, dan pembagian IPnya mengikuti tabel. Kemudian jika ada subnet yang bisa diassign, maka kita langsung mengassign. Hal ini dilakukan berulang" sampai semua subnet selesai di assign.
 
 ### Subnet + IP
 
@@ -61,9 +61,13 @@ Selanjutnya menyesuaikan pembagian IP sesuai dengan subnet yang telah dibagi ber
 
 ### Assignment pada CPT
 
-![image](https://user-images.githubusercontent.com/55318172/143670080-b97f4a5e-f411-4da8-92b1-075a74395b6b.png)
 
-Contoh pada pucci, kita menambahkan IP dan Subnet Mask sesuai dengan pembagian yang telah dilakukan, dengan IP ditambah 1 dari subnetnya. Hal ini diassign untuk semua router, client dan server.
+Contoh pada The Minister di router, kita menambahkan IP dan Subnet Mask sesuai dengan pembagian yang telah dilakukan, dengan IP ditambah 1 dari subnetnya. Hal ini diassign untuk semua router, client dan server.
+![image](https://user-images.githubusercontent.com/96496752/204092701-e92d658e-25f5-4c87-bfba-b43b419bf4ce.png)
+
+Contoh pada Guideau di Host / client
+
+![image](https://user-images.githubusercontent.com/96496752/204092749-02a65e2c-d51e-4a5b-8dd0-ca7441c60198.png)
 
 Pada server & Client ditambahkan juga gateway yang mengarah ke router terdekat.
 
@@ -74,7 +78,7 @@ Pada server & Client ditambahkan juga gateway yang mengarah ke router terdekat.
 
 Karena default hanya memiliki 2 port ethernet, maka kita bisa menambah port pada tab physical
 
-![image](https://user-images.githubusercontent.com/55318172/143670287-44136d1e-15cb-4508-819d-aad0e9fa92bc.png)
+![image](https://user-images.githubusercontent.com/96496752/204092805-856c3305-db48-473f-8eb4-37f24b2dec84.png)
 
 Contoh pada foosha kami menambah 3 port lagi karena butuh terkoneksi 5 cabang
 
@@ -82,48 +86,62 @@ Contoh pada foosha kami menambah 3 port lagi karena butuh terkoneksi 5 cabang
 
 Pada routing berikut adalah config" yang berada pada router.
 
-#### Pucci
+#### The Minister
 
-![image](https://user-images.githubusercontent.com/55318172/143670128-dfb5e35d-356e-49e5-8e28-7d2de7280a99.png)
+![image](https://user-images.githubusercontent.com/96496752/204092907-0c0547dc-c7de-42a6-9061-78590d1ceef6.png)
 
-0.0.0.0 berarti mengambil semua pesan dan diarahkan ke next hop.
+0.0.0.0 berarti mengambil semua pesan dan diarahkan ke next hop di tambah ke subnet A4
 
-#### Water7
+#### The Dauntless
 
-![image](https://user-images.githubusercontent.com/55318172/143670137-3f45dd8f-b680-4b8b-bac1-4fb0925a422d.png)
+![image](https://user-images.githubusercontent.com/96496752/204092967-3eafea58-9a04-4834-8f0f-e2094970baaf.png)
 
-Pada water7 kita mengarahkan ke subnet 27.0 dan 20.0 dengan next hop ke pucci.
+0.0.0.0 berarti mengambil semua pesan dan diarahkan ke next hop
 
-#### Seastone
+#### The Order
 
-![image](https://user-images.githubusercontent.com/55318172/143670149-3ea5851c-ec70-48f6-adf4-639589da104c.png)
+![image](https://user-images.githubusercontent.com/96496752/204093017-81c10921-f20e-4bd9-9ea1-85a7e3392ace.png)
 
+routing 0.0.0.0 melalui The resonance dan routing ke setiap subnet sebelumnya, A1, A3, A4
 
-#### Oimo
+#### The Resonance
 
-![image](https://user-images.githubusercontent.com/55318172/143670163-9a1130b7-6923-4d12-b157-c0904ab3ec1f.png)
+![image](https://user-images.githubusercontent.com/96496752/204093055-88ed0195-1d1a-4911-96a8-701877e4eff3.png)
 
-Pada Oimo ditambahkan routing untuk ke subnet Elena
+routing 0.0.0.0 melalui The Order dan routing ke setiap subnet sebelumnya, A14, A7, A11, A15, A16, A12, A8, A18, A13
 
-#### Alabasta
+#### The Instrument
 
-![image](https://user-images.githubusercontent.com/55318172/143670177-1a786a5b-b228-4ccc-9936-bee498307cea.png)
+![image](https://user-images.githubusercontent.com/96496752/204093135-3bef98af-177c-4405-be26-a2b6c07b1e0d.png)
 
-#### Guanhao
+routing 0.0.0.0 melalui The Resonance dan routing ke setiap subnet sebelumnya,  A11, A15, A16, A12, A8, A18, A13
 
-![CleanShot 2021-11-27 at 13 06 10](https://user-images.githubusercontent.com/55318172/143670188-ce53921b-852e-4553-9693-8d247c430267.png)
+#### The Magical
+![image](https://user-images.githubusercontent.com/96496752/204093159-31aaa627-06d8-41d0-9b47-accf7be25644.png)
 
-Guanhao memiliki tanggung jawab untuk mengarahkan subnet" di bawah Oimo dan subnet di kanan guanhao yaitu jorge
+routing 0.0.0.0 melalui The Resonance 
 
-#### Foosha
+#### The Profound
 
-![image](https://user-images.githubusercontent.com/55318172/143670215-706b09d7-bbf4-494c-9fec-54216ae4defa.png)
+![image](https://user-images.githubusercontent.com/96496752/204093290-fdad629e-0476-419c-8dfc-e6631da47edb.png)
 
-Karena kita sudah melakukan routing banyak di Guanhao dan Water7, Foosha akan bertugas untuk mensortir request yang masuk dan mengarahkan antara ke guanhao atau water7
+routing 0.0.0.0 melalui The Instrument
+
+#### The Firefist
+
+![image](https://user-images.githubusercontent.com/96496752/204093200-7961cca3-79c1-45fb-9ae2-f8ab4967ed29.png)
+
+routing 0.0.0.0 melalui The Instrumetn dan routing setiap subnet sebelumnya, A18
+
+#### The Queen
+
+![image](https://user-images.githubusercontent.com/96496752/204093307-37b8cc02-dd6b-4d9a-a63a-7c6f6da28d11.png)
+
+routing 0.0.0.0 melalui The Firefist
 
 ### VLSM Routing Check 
 
-https://user-images.githubusercontent.com/55318172/143031251-1e2bdc97-7a13-49dc-8a0d-4f90056357ab.mp4
+https://user-images.githubusercontent.com/96496752/204093598-687bd9a0-a772-49a1-a45b-91b10052d708.mp4
 
 ## CIDR
 
