@@ -197,278 +197,316 @@ Maka didapatkan hasil pembagian IP sesuai pada tabel berikut.
 
 Pada network configuration, kita melakukan assignment dengan IP yang telah ditetapkan sesuai dengan subnet
 
-#### Jipangu
-
-```bash
-auto eth0
-iface eth0 inet static
-address 192.201.8.2
-netmask 255.255.255.128
-gateway 192.201.8.1
-```
-
-#### Pucci
+#### The Resonance
 
 ```bash
 auto lo
 iface lo inet loopback
 
-auto eth0
-iface eth0 inet static
-address 192.201.16.1
-netmask 255.255.255.252
-gateway 192.201.16.2
+ auto eth0
+ iface eth0 inet dhcp
 
+# ke The Order
 auto eth1
 iface eth1 inet static
-address 192.201.8.1
-netmask 255.255.255.128
-
-auto eth2
-iface eth2 inet static
-address 192.201.0.1
-netmask 255.255.248.0
-```
-
-#### Courtyard
-
-```bash
-auto eth0
-iface eth0 inet static
-address 192.201.0.2
-netmask 255.255.248.0
-gateway 192.201.0.1
-```
-
-#### Calmbelt
-
-```bash
-auto eth0
-iface eth0 inet static
-address 192.201.0.3
-netmask 255.255.248.0
-gateway 192.201.0.1
-```
-
-#### Water7
-
-```bash
-auto lo
-iface lo inet loopback
-
-auto eth0
-iface eth0 inet static
-address 192.201.64.1
-netmask 255.255.255.252
-gateway 192.201.64.2
-
-auto eth1
-iface eth1 inet static
-address 192.201.32.1
-netmask 255.255.252.0
-
-auto eth2
-iface eth2 inet static
-address 192.201.16.2
-netmask 255.255.255.252
-```
-
-#### Cipher
-
-```bash
-auto eth0
-iface eth0 inet static
-address 192.201.32.2
-netmask 255.255.252.0
-gateway 192.201.32.1
-```
-
-#### Foosha
-
-```bash
-auto lo
-iface lo inet loopback
-
-auto eth0
-iface eth0 inet dhcp
-
-auto eth1
-iface eth1 inet static
-address 192.201.128.1
-netmask 255.255.252.0
-
-auto eth2
-iface eth2 inet static
-address 192.201.64.2
+address 192.194.32.1
 netmask 255.255.255.252
 
+# ke The Instrument
+auto eth2
+iface eth2 inet static
+address 192.194.24.1
+netmask 255.255.255.252
+
+# ke The Magical
 auto eth3
 iface eth3 inet static
-address 192.200.128.1
+address 192.194.18.1
 netmask 255.255.255.252
 
+# ke The Beast
 auto eth4
 iface eth4 inet static
-address 192.200.64.1
+address 192.194.16.1
 netmask 255.255.255.252
+
 ```
 
-#### Blueno
-
-```bash
-auto eth0
-iface eth0 inet static
-address 192.201.128.2
-netmask 255.255.252.0
-gateway 192.201.128.1
-```
-
-#### Doriki
-
-```bash
-auto eth0
-iface eth0 inet static
-address 192.200.128.2
-netmask 255.255.255.252
-gateway 192.200.128.1
-```
-
-#### Guanhao
+#### The Order
 
 ```bash
 auto lo
 iface lo inet loopback
 
+# ke The Resonance
 auto eth0
 iface eth0 inet static
-address 192.200.64.2
+address 192.194.32.2
 netmask 255.255.255.252
-gateway 192.200.64.1
+gateway 192.194.32.1
+
+# ke Ashaf
+auto eth1
+iface eth1 inet static
+address 192.194.80.1
+netmask 255.255.255.192
+
+# ke The Minister
+auto eth2
+iface eth2 inet static
+address 192.194.72.1
+netmask 255.255.255.252
+```
+
+#### The Minister
+
+```bash
+auto lo
+iface lo inet loopback
+
+# ke The Order
+auto eth0
+iface eth0 inet static
+address 192.194.72.2
+netmask 255.255.255.252
+gateway 192.194.72.1
+
+# ke Guideau
+auto eth1
+iface eth1 inet static
+address 192.194.66.1
+netmask 255.255.252.0
+
+# ke Dauntless
+auto eth2
+iface eth2 inet static
+address 192.194.65.1
+netmask 255.255.255.252
+```
+
+#### The Dauntless
+
+```bash
+auto lo
+iface lo inet loopback
+
+# ke The Minister
+auto eth0
+iface eth0 inet static
+address 192.194.65.2
+netmask 255.255.255.252
+gateway 192.194.65.1
+
+# ke bawah
+auto eth1
+iface eth1 inet static
+address 192.194.64.1
+netmask 255.255.255.0
+```
+
+#### The Magical
+
+```bash
+auto lo
+iface lo inet loopback
+
+# ke The Resonance
+auto eth0
+iface eth0 inet static
+address 192.194.18.2
+netmask 255.255.255.252
+gateway 192.194.18.1
 
 auto eth1
 iface eth1 inet static
-address 192.200.36.1
-netmask 255.255.252.0
+address 192.194.16.1
+netmask 255.255.254.0
+
+```
+
+#### The Instrument
+
+```bash
+# ke The Resonance
+auto eth0
+iface eth0 inet static
+address 192.194.24.2
+netmask 255.255.255.252
+gateway 192.194.24.1
+
+auto eth1
+iface eth1 inet static
+address 192.194.10.1
+netmask 255.255.255.128
 
 auto eth2
 iface eth2 inet static
-address 192.200.32.1
-netmask 255.255.254.0
-
+address 192.194.4.1
+netmask 255.255.255.252
 
 auto eth3
 iface eth3 inet static
-address 192.200.16.1
+address 192.194.9.1
 netmask 255.255.255.252
 ```
 
-#### Jabra
+#### The Firefist
 
 ```bash
 auto eth0
 iface eth0 inet static
-address 192.200.36.2
-netmask 255.255.252.0
-gateway 192.200.36.1
-```
-
-#### Maingate
-
-```bash
-auto eth0
-iface eth0 inet static
-address 192.200.32.3
-netmask 255.255.254.0
-gateway 192.200.32.1
-```
-
-#### Alabasta
-
-```bash
-auto lo
-iface lo inet loopback
-
-auto eth0
-iface eth0 inet static
-address 192.200.32.2
-netmask 255.255.254.0
-gateway 192.200.32.1
+address 192.194.4.2
+netmask 255.255.255.252
+gateway 192.194.4.1
 
 auto eth1
 iface eth1 inet static
-address 192.200.34.1
-netmask 255.255.255.240
-```
-
-#### Jorge
-
-```bash
-auto eth0
-iface eth0 inet static
-address 192.200.34.2
-netmask 255.255.255.240
-gateway 192.200.34.1
-```
-
-#### Oimo
-
-```bash
-auto lo
-iface lo inet loopback
-
-auto eth0
-iface eth0 inet static
-address 192.200.16.2
-netmask 255.255.255.252
-gateway 192.200.16.1
-
-auto eth1
-iface eth1 inet static
-address 192.200.8.1
-netmask 255.255.255.252
+address 192.194.0.1
+netmask 255.255.255.0
 
 auto eth2
 iface eth2 inet static
-address 192.200.4.1
-netmask 255.255.255.0
+address 192.194.2.1
+netmask 255.255.255.254
 ```
 
-#### EniesLobby
+#### The Queen
 
 ```bash
 auto eth0
 iface eth0 inet static
-address 192.200.4.3
+address 192.194.0.2
 netmask 255.255.255.0
-gateway 192.200.4.1
-```
-
-#### Seastone
-
-```bash
-auto lo
-iface lo inet loopback
-
-auto eth0
-iface eth0 inet static
-address 192.200.4.2
-netmask 255.255.255.0
-gateway 192.200.4.1
+gateway 192.194.0.1
 
 auto eth1
 iface eth1 inet static
-address 192.200.0.1
-netmask 255.255.252.0
+address 192.194.1.1
+netmask 255.255.255.0
 ```
 
-#### Elena
+#### The Profound
 
 ```bash
 auto eth0
 iface eth0 inet static
-address 192.200.0.2
+address 192.194.9.2
+netmask 255.255.255.252
+gateway 192.194.9.1
+
+auto eth1
+iface eth1 inet static
+address 192.194.8.129
+netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+address 192.194.8.1
+netmask 255.255.255.128
+```
+
+#### Guideau
+
+```bash
+# ke The Minister
+auto eth0
+iface eth0 inet static
+address 192.194.66.2
 netmask 255.255.252.0
-gateway 192.200.0.1
+gateway 192.194.66.1
+```
+
+#### Johan
+
+```bash
+# ke The Dauntless
+auto eth0
+iface eth0 inet static
+address 192.194.64.2
+netmask 255.255.255.252
+gateway 192.194.64.1
+```
+
+#### Phanora
+
+```bash
+# ke The Dauntless
+auto eth0
+iface eth0 inet static
+address 192.194.64.3
+netmask 255.255.255.252
+gateway 192.194.64.1
+```
+
+#### Keith
+
+```bash
+auto eth0
+iface eth0 inet static
+address 192.194.0.2
+netmask 255.255.255.0
+gateway 192.194.0.1
+```
+
+#### The Witch
+
+```bash
+auto eth0
+iface eth0 inet static
+address 192.194.1.2
+netmask 255.255.255.252
+gateway 192.194.1.1
+```
+
+#### Oakleave
+
+```bash
+auto eth0
+iface eth0 inet static
+address 192.194.2.2
+netmask 255.255.255.0
+gateway 192.194.2.1
+```
+
+#### Helga
+
+```bash
+auto eth0
+iface eth0 inet static
+address 192.194.8.130
+netmask 255.255.255.128
+gateway 192.194.8.129
+
+```
+
+#### Spendrow
+
+```bash
+auto eth0
+iface eth0 inet static
+address 192.194.8.2
+netmask 255.255.255.128
+gateway 192.194.8.1
+```
+
+#### Corvect
+
+```bash
+auto eth0
+iface eth0 inet static
+address 192.194.16.2
+netmask 255.255.254.0
+gateway 192.194.16.1
+```
+
+#### Haines
+
+```bash
+auto eth0
+iface eth0 inet static
+address 192.194.16.3
+netmask 255.255.254.0
+gateway 192.194.16.1
 ```
 
 ### Routing
