@@ -9,12 +9,10 @@ Muhammad Rafif Fadhil Naufal | 5025201273
 M Labib Alfaraby | 5025201083
 ### List
 
-1. [Problem VLSM dengan CPT](https://github.com/nurputrak/Jarkom-Modul-4-E01-2021#vlsmvariable-length-subnet-masking)
-2. [Problem CIDR dengan GNS3](https://github.com/nurputrak/Jarkom-Modul-4-E01-2021#CIDR)
-
 ## Pembagian Subnet
 
-![image](https://user-images.githubusercontent.com/55318172/143030727-cda6d42a-9925-4d7e-b819-5525f7c7bb8e.png)
+<img width="482" alt="Frame 2" src="https://user-images.githubusercontent.com/81162174/204088760-c77f0962-92bd-4731-8d5f-2656760bfbe0.png">
+
 
 ## VLSM(Variable Length Subnet Masking)
 
