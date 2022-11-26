@@ -1,9 +1,12 @@
-# Jarkom-Modul-4-E01-2021
+# Jarkom-Modul-3-E04-2022
+Laporan Resmi Praktikum Jarkom Modul 3 untuk kelompok E04.
 
-- Clarence 05111940000104
-- Nur Putra Khanafi 05111940000020
-- Husnan 05111940007002
-
+# Anggota Kelompok
+Anggota  | NRP
+---------|-------
+Muhammad Afif Dwi Ardiansyah | 5025201212
+Muhammad Rafif Fadhil Naufal | 5025201273
+M Labib Alfaraby | 5025201083
 ### List
 
 1. [Problem VLSM dengan CPT](https://github.com/nurputrak/Jarkom-Modul-4-E01-2021#vlsmvariable-length-subnet-masking)
