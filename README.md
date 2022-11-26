@@ -513,73 +513,68 @@ gateway 192.194.16.1
 
 Routing yang dilakukan di GNS sama persis dengan di CPT, hanya saja syntax dan IPnya berbeda.
 
-#### Pucci
+#### The Resonance
 
 ```bash
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.201.16.2
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.194.32.2
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.194.24.2
+route add -net 192.194.16.0 netmask 255.255.254.0 gw 192.194.18.2
+route add -net 192.194.10.0 netmask 255.255.255.252 gw 192.194.24.2
 ```
 
-#### Water7
+#### The Order
 
 ```bash
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.201.64.2
-route add -net 192.201.8.0 netmask 255.255.255.128 gw 192.201.16.1
-route add -net 192.201.0.0 netmask 255.255.248.0 gw 192.201.16.1
-route add -net 192.201.16.0 netmask 255.255.255.252 gw 192.201.16.1
+route add -net 192.194.65.0 netmask 255.255.255.252 gw 192.194.72.2
+route add -net 192.194.66.0 netmask 255.255.255.252 gw 192.194.72.2
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.194.72.2
 ```
 
-#### Seastone
+#### The Minister
 
 ```bash
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.200.4.1
+route add -net 192.194.64.0 netmask 255.255.255.0 gw 192.194.65.2
 ```
 
-#### Oimo
+#### The Dauntless
 
 ```bash
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.200.16.1
-route add -net 192.200.0.0 netmask 255.255.252.0 gw 192.200.4.2
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.194.65.1
 ```
 
-#### Alabasta
+#### The Queen
 
 ```bash
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.200.32.1
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.194.0.1
 ```
 
-#### Guanhao
+#### The Firefist
 
 ```bash
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.200.64.1
-route add -net 192.200.4.0 netmask 255.255.255.0 gw 192.200.16.2
-route add -net 192.200.0.0 netmask 255.255.252.0 gw 192.200.16.2
-route add -net 192.200.8.0 netmask 255.255.255.252 gw 192.200.16.2
-route add -net 192.200.34.0 netmask 255.255.255.240 gw 192.200.32.2
-# oimo-guan subnet
-route add -net 192.200.16.0 netmask 255.255.255.252 gw 192.200.32.2
-# doriki
-route add -net 192.200.128.0 netmask 255.255.255.252 gw 192.200.64.1
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.194.4.1
+route add -net 192.194.1.0 netmask 255.255.255.252 gw 192.194.0.2
 ```
 
-#### Foosha
+#### The Instrument
 
 ```bash
-# bawah
-route add -net 192.200.4.0 netmask 255.255.255.0 gw 192.200.64.2
-route add -net 192.200.0.0 netmask 255.255.252.0 gw 192.200.64.2
-route add -net 192.200.8.0 netmask 255.255.255.252 gw 192.200.64.2
-route add -net 192.200.36.0 netmask 255.255.252.0 gw 192.200.64.2
-route add -net 192.200.32.0 netmask 255.255.254.0 gw 192.200.64.2
-route add -net 192.200.34.0 netmask 255.255.255.240 gw 192.200.64.2
-route add -net 192.200.16.0 netmask 255.255.255.252 gw 192.200.64.2
-
-# kiri
-route add -net 192.201.8.0 netmask 255.255.255.128 gw 192.201.64.1
-route add -net 192.201.0.0 netmask 255.255.248.0 gw 192.201.64.1
-route add -net 192.201.32.0 netmask 255.255.252.0 gw 192.201.64.1
-route add -net 192.201.16.0 netmask 255.255.255.252 gw 192.201.64.1
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.194.24.1
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.194.4.2
+route add -net 192.194.8.0 netmask 255.255.255.128 gw 192.194.9.2
+route add -net 192.194.8.128 netmask 255.255.255.128 gw 192.194.9.2
 ```
 
+#### The Profound
+
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.194.9.1
+```
+
+#### The Magical
+
+```bash
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.194.18.1
+```
 
 
 ### Kendala Pengerjaan
