@@ -20,22 +20,25 @@ Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan  melabel netmas
 
 | Subnet | Alias | Jumlah IP  | Netmask |
 | --- | --- | --- | --- |
-| A1 | jipangu - pucci | 101 | /25 |
-| A2 | court - calm - pucc | 2021 | /21 |
-| A3 | pucc - wat7 | 2 | /30 |
-| A4 | ciph - wat7 | 701 | /22 |
-| A5 | blueno - foosha | 1001 | /22 |
-| A6 | wat7 - foosha | 2 | /30 |
-| A7 | foosha - guanhao | 2 | /30 |
-| A8 | jabra - guanhao | 521 | /22 |
-| A9 | guan - alabas - maingate | 502 | /23 |
-| A10 | alaba - jorge | 13 | /28 |
-| A11 | guan - oimo | 2 | /30 |
-| A12 | enies - seast - oimo | 252 | /24 |
-| A13 | seast - elena | 721 | /22 |
-| A14 | foosha -doriki | 2 | /30 |
-| A15 | oimo - fukurou | 2 | /30 |
-| Total |  | 5845 | /19 |
+| A1 | Guideau - The Minister | 1001 | /22 |
+| A2 | The Minister - The Order | 2 | /21 |
+| A3 | The Minister - The Dauntless | 2 | /30 |
+| A4 | The Dauntless - Phamora - Johan | 251 | /22 |
+| A5 | The Order - Ashaf | 51 | /22 |
+| A6 | The Order - The Resonance | 2 | /30 |
+| A7 | Matt Cougat - The Instrument | 121 | /30 |
+| A8 | Keith - The Firefist - The Queen | 212 | /22 |
+| A9 | The Resonance - The Magical | 2 | /23 |
+| A10 | The Resonance - The Instrument | 2 | /28 |
+| A11 | The Instrument - The Profound | 2 | /30 |
+| A12 | The Instrument - The Firefist | 2 | /24 |
+| A13 | The Firefist - Oakleaf | 5011 | /22 |
+| A14 | The Magical - Haines - Corvekt | 271 | /30 |
+| A15 | The Profound - Spendrow | 121 | /30 |
+| A16 | The Profound - Heiga | 25 | /30 |
+| A17 | The Resonance - Beast | 2 | /30 |
+| A18 | The Profound - Spendrow | 2 | /30 |
+| Total |  | 2618 | /20 |
 
 ### Pohon IP
 
