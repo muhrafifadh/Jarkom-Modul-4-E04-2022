@@ -134,53 +134,13 @@ Menggabungkan subnet-subnet paling bawah dalam topologi yaitu dimulai dari subne
 ![CIDR-Tree-Halaman-1 drawio](https://user-images.githubusercontent.com/81162174/204090109-686efae8-f8e2-49d6-81c5-760edf28948a.png)
 
 
-#### Gabungan Pertama(Subnet B)
-
-1. Penggabungan 1 yaitu subnet A1 dan A2 menghasilkan B1 dengan netmask /20 yaitu satu tingkat dari netmask terbesar yang diambil yaitu /21 dari A2.
-2. Penggabungan 2 yaitu subnet A12 dan A13 menghasilkan B2 dengan netmask /21 (satu tingkat dari /22).
-3. Penggabungan 3 yaitu subnet A9 dan A10 menghasilkan B3 dengan netmask /22 (satu tingkat dari /23).
-
+#### Gabungan Pertama(Subnet)
 ![CIDR-Tree-Salinan Halaman-1 drawio](https://user-images.githubusercontent.com/81162174/204090371-93ee0258-de20-4b3f-837b-896b63565131.png)
-
-#### Gabungan Kedua(Subnet C)
-
-1. Penggabungan 1 yaitu subnet B1 dan A3 menghasilkan C1 dengan netmask /19 yaitu satu tingkat dari netmask terbesar yang diambil yaitu /20 dari B1.
-2. Penggabungan 2 yaitu subnet B2 dan A15 menghasilkan C2 dengan netmask /20.
-3. Penggabungan 3 yaitu subnet B3 dan A8 menghasilkan B3 dengan netmask /21.
-
 ![CIDR-Tree-Salinan Salinan Halaman-1 drawio](https://user-images.githubusercontent.com/81162174/204090384-9bab1e50-cd82-4cbe-9540-53886cbe0779.png)
-
-#### Gabungan Ketiga(Subnet D)
-
-1. Penggabungan 1 yaitu subnet C1 dan A4 menghasilkan D1 dengan netmask /18 yaitu satu tingkat dari netmask terbesar yang diambil yaitu /19 dari C1.
-2. Penggabungan 2 yaitu subnet C2 dan A11 menghasilkan D2 dengan netmask /19.
-
 ![CIDR-Tree-Salinan Salinan Salinan Halaman-1 drawio](https://user-images.githubusercontent.com/81162174/204090413-854151ca-59f3-4f84-a2bf-c27a121298e2.png)
-
-#### Gabungan Keempat(Subnet E)
-
-1. Penggabungan 1 yaitu subnet D1 dan A6 menghasilkan E1 dengan netmask /17 yaitu satu tingkat dari netmask terbesar yang diambil yaitu /18 dari D1.
-2. Penggabungan 2 yaitu subnet D2 dan C3 menghasilkan E2 dengan netmask /18.
-
 ![CIDR-Tree-Salinan Salinan Salinan Salinan Halaman-1 drawio](https://user-images.githubusercontent.com/81162174/204090429-dfb979b3-42db-4ffb-b0a7-cedc4547b058.png)
-
-#### Gabungan Kelima(Subnet F)
-
-1. Penggabungan 1 yaitu subnet E1 dan A5 menghasilkan F1 dengan netmask /16 yaitu satu tingkat dari netmask terbesar yang diambil yaitu /17 dari E1.
-2. Penggabungan 2 yaitu subnet E2 dan A7 menghasilkan F2 dengan netmask /17.
-
 ![CIDR-Tree-Salinan Salinan Salinan Salinan Salinan Halaman-1 drawio (1)](https://user-images.githubusercontent.com/81162174/204090447-1e25c018-6d5c-4c80-9d62-964634f7b4ec.png)
-
-#### Gabungan Keenam(Subnet G)
-
-Pada step ini hanya terjadi satu penggabungan yaitu subnet F2 dan A14 menghasilkan G1 dengan netmask /16 yaitu satu tingkat dari netmask terbesar yang diambil yaitu /17 dari F2.
-
 ![CIDR-Tree-Halaman 2 drawio](https://user-images.githubusercontent.com/81162174/204090453-40fca2d1-6f88-4b50-ba84-be8e9e8e28af.png)
-
-#### Gabungan Ketujuh(Subnet H)
-
-Step terakhir yaitu menggabungkan dua kelompok F1 dan G1 menjadi satu yaitu subnet H1 dengan netmask /15.
-
 ![CIDR-Tree-Halaman 3 drawio](https://user-images.githubusercontent.com/81162174/204090463-cecde507-5e40-4d27-8c43-38dae9179030.png)
 ![CIDR-Tree-Halaman 4 drawio](https://user-images.githubusercontent.com/81162174/204090465-b6ac37e9-db05-4153-abaa-5d45a771da10.png)
 ![CIDR-Tree-Halaman 5 drawio](https://user-images.githubusercontent.com/81162174/204090478-d6539d6c-965c-4db6-8f25-c45294f2253e.png)
